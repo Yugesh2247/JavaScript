@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            transition: all .5s ease-in-out;
+        }
+        .button{
+            text-align: center;
+            top:250px;
+            position: relative;
+            
+        }
+        button{
+           border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        #btn:active{
+            background-color: black;
+            color: white;
+        }
+        @keyframes anime {
+            0%{
+
+            }
+            100%{
+
+                background-color: black;
+                color: white;
+            }
+            
+        }
+        .white{
+            background-color: black;
+            color: white;
+        }
+        .white:hover{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button id="btn" onclick="fun('white');" class="btnn">LightMode</button>
+        <button id="btn" onclick="fun2('black'); " class="white">DarkMode</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

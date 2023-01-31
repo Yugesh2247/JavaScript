@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music_container">
+            <div class="details">
+              <div class="heading">
+                <p>PLAYING FROM YOUR LIBRARY <br><span>Liked Songs</span></p>
+              </div>
+              <div class="bg">
+
+              </div>
+              <div class="music_track">Calm Down</div>
+              <div class="artist">Selena Gomez</div>
+            </div>
+            <div class="slider_container">
+              <div class="current_time">00:00</div>
+              <input type="range" name="" id="" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+              <div class="total_duration">00:00</div>
+            </div>
+
+            <div class="slider_container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" max="100" min="1" value="90" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+
+            <div class="buttons">
+                <div class="random_track" onclick="randomTrack()">
+                    <i class="fas fa-random fa-1x" title="random"></i>
+                </div>
+                <div class="prev_track" onclick="prevTrack()">
+                    <i class="fas fa-step-backward fa-1x" ></i>
+                </div>
+                <div class="playpause_track" onclick="playpauseTrack()">
+                    <i class="fas fa-play-circle fa-2x" ></i>
+                </div>
+                <div class="next_track" onclick="nextTrack()">
+                    <i class="fas fa-step-forward fa-1x" ></i>
+                </div>
+                <div class="repeat_track" onclick="repeatTrack()">
+                    <i class="fas fa-repeat fa-1x" title="repeat"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/9f656367b8.js" crossorigin="anonymous"></script>
+</body>
+</html>
