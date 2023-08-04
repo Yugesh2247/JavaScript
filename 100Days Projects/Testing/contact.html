@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Wonders</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+        <div class="head">
+<div class="logo">
+    <h3>Game <span>Wonders</span></h3>
+        </div>
+<ul>
+    <li><a href="index.html" >Home</a></li>
+    <li><a href="#" class="category">Category</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#" class="active">Contact</a></li>
+</ul>
+
+    </div>
+    <div class="cate">
+    <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Adventure</a></li>
+        <li><a href="#">Shooting</a></li>
+        <li><a href="#">Survival</a></li>
+        <li><a href="#">Simulation</a></li>
+    </ul>
+    </div>
+    <div class="forms">
+        <form onsubmit="sendEmail(event)">
+            <input type="text" placeholder="Name" required><br><br>
+            <input type="email" placeholder="Email id" id="email" required>
+            <br><br>
+            <input type="number" name="" id="" placeholder="Phone no." required>
+            <br><br>
+            <textarea name="" id="message" cols="30" rows="4" placeholder="How can we help you?" required></textarea>
+            <br><br>
+            <button>Send</button>
+        </form>
+    </div>
+    
+</div>
+<script src="index.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(e){
+        e.preventDefault();
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "whitedevil2247@gmail.com",
+            Password : "CAE337056185FC8CC9AE98DB0A6E10837E3C",
+            To: 'whitedevil2247@gmail.com',
+            From: document.getElementById('email').value,
+            Subject : "New content form ",
+            Body : document.getElementById('message').value
+        }).then(
+          message => alert(message)
+        )
+    }
+</script>
+
+</body>
+</html>

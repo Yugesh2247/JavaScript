@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(127, 255, 212, 0.455);
+}   
+.main-content{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(245, 222, 179, 0.633);
+    border-radius: 30px;
+    border: transparent;
+    display: flex;
+    flex-direction: column;
+     align-items: center; 
+    justify-content: center;
+}
+#Rock{
+    position: absolute;
+    left:560px;
+    top:400px;
+}
+#Papers{
+    position: relative;
+    left:110px;
+    top:37px;
+}

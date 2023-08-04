@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/ww.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+body{
+    /* overflow: hidden; */
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    width: 60px;
+    background-color: rgba(19, 17, 17, 0.595);
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    flex-direction: column;
+    transition: .5s;
+    justify-content: flex-start;
+}
+
+.icons{
+    color: rgba(255, 252, 252, 0.959);
+    align-items: center; 
+    /* justify-content: flex-start; */
+    flex-direction: column;
+    display: flex;
+    
+}
+.icons li{
+    list-style: none;
+    position: relative;
+    top:10px;
+    right:20px;
+    text-align: center; 
+    /* gap:20px; */
+    /* justify-content: flex-start; */
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    display: flex;
+    /* justify-content: flex-end; */
+    display: none;
+    transition: .5s;
+}
+.header:hover{
+    width: 150px;
+}
+.header:hover .icons li i a{
+    display: block;
+    font-size: small;
+    position: relative;
+    transition: 15s;
+}

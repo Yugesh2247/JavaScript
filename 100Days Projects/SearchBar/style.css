@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: .3s;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(121, 137, 227, 0.226);
+    position: fixed;
+}
+.logo{
+
+    padding-left: 20px;
+    padding-top: 20px;
+}
+span{
+    color: orange;
+}
+.header ul li{
+    display: inline;
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    left:200px;
+    bottom: 19px;
+
+}
+.header ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    
+}
+.header ul li .active{
+    color: green;
+    
+}
+.header ul li a:hover{
+    color: green;
+}
+.searchbar form{
+    border: 1px solid blue;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    left:1050px;
+    bottom: 50px;
+}
+.searchbar form input{
+width: 100%;
+border: none;
+outline: none;
+padding: 10px 10px;
+font-size: medium;
+background-color: transparent;
+/* background-color: rgba(121, 137, 227, 0.226); */
+}.searchbar form i{
+    padding: 5px;
+    padding-top: 11px;
+    padding-left: 13px;
+}
+.searchbar form:invalid{
+    border: 2px solid red;
+    animation: move 0.2s 3;
+}
+@keyframes move{
+ 
+    25%{
+translate: 6px 0;
+    }
+    50%{
+        translate: -6px 0;
+    }
+    75%{
+    translate: 6px 0;
+    }
+}
+/* .searchbar form:active{
+    width: 400px;
+} */
+.search{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(191, 178, 178);
+    position: relative;
+    top: 60px;
+    overflow: hidden;
+left: 500px;
+border-radius: 60px;
+/* cursor: pointer; */
+transition: 0.5s;
+}
+.icon{
+    position: relative;
+    top: 16px;
+    left:16px;
+    cursor: pointer;
+}
+.search.active{
+    width: 400px;
+
+}
+.search .input{
+    position: relative;
+    width: 300px;
+    height: 60px;
+    left:60px;
+    /* text-align: center; */
+    align-items: center;
+    display: flex;
+    bottom: 24px;
+}
+.search .input input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: larger;
+}
+.fa-solid{
+    position: relative;
+    left:820px;
+    top:17px;
+    cursor: pointer;
+    display: none;
+}
+.cancel{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}

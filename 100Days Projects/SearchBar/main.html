@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Deals</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f656367b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+<div class="logo"><h3>Game <span>Wonders</span></h3></div>
+<ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Shop</a></li>
+</ul>
+<div class="searchbar">
+    <form action="#">
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-products" placeholder="Search Products" pattern="[a-z,A-Z,0-9]*">
+    </form>
+</div>
+    </div>
+    <div class="search">
+
+        <div class="icon">
+            <i class="fas fa-search fa-lg">
+
+            </i>    
+        </div>
+            <div class="input">
+                <input type="text" placeholder="Search" name="" id="text">
+            </div>  
+           <div class="cancel">
+            <i class="fa-solid fa-xmark"></i>
+           </div>
+    </div>
+    <!-- <i class="fa-solid fa-xmark"></i> -->
+    <script>
+        navigator.vibrate(1000);
+        const search=document.querySelector('.search');
+        const icon=document.querySelector('.icon');
+        const input=document.getElementById('.input');
+
+        icon.onclick=function(){
+            search.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
