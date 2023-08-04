@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Tilt+Neon&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    /* margin: 40px 0 60px 0; */
+}
+body{
+    background-color: rgba(0, 139, 139, 0.541);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+form{
+    width: 700px;
+    height: 350px;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border: none;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+#search-bar{
+    width: 300px;
+    max-width: 600px;
+    padding: 10px;
+    border: none;
+    color: #333;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+#search-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius:  5px;
+    background-color:#138065 ;
+    color: white;
+    cursor: pointer;
+
+}
+#result{
+    color: green;
+}

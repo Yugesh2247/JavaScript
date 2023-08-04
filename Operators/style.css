@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Tilt+Neon&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* cursor: none; */
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+input{
+    width: 300px;
+    border:none;
+    padding: 10px 20px;
+    
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+#submit{
+    padding: 10px 20px;
+    border: none;
+    background-color: dimgrey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#operators{
+    padding: 10px 20px;
+}
+
+input{
+    background-color:rgba(67, 172, 213, 0.223);
+    
+    
+}
